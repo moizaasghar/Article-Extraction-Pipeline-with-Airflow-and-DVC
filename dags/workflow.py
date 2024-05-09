@@ -77,9 +77,6 @@ def store_data(**kwargs):
     # Add a DVC remote for Google Drive
     os.system(f'dvc remote add -d mygdrive gdrive://{folder_id}')
 
-    # Use a service account for Google Drive access
-    os.system('dvc remote modify myremote gdrive_use_service_account true')
-
     # Add data to DVC and push it to the remote
     os.system('dvc add data/processed_data.json')
     os.system('dvc commit')
