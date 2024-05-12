@@ -81,6 +81,10 @@ def store_data(**kwargs):
     os.system('dvc add data/processed_data.json')
     os.system('dvc commit')
     os.system('dvc push')
+    os.system('git add .')
+    os.system('git commit -m "Add processed data"')
+    os.system('git push origin main')
+
 
 default_args = {
     'owner': 'airflow',
