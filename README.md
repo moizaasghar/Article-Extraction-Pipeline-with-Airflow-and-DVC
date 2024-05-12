@@ -12,4 +12,3 @@ This project consists of an Apache Airflow DAG designed to extract, transform, a
 Clone the repository and install the required Python libraries.
 ```bash
 git clone <repository-url>
-pip install -r requirements.txt
